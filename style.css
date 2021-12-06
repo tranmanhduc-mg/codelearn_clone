@@ -1,8 +1,9 @@
 :root {
   --white-color: #ffffff;
   --black-color: #000000;
+  --primary-color: #263c8f;
+  --second-color: #43b5c3;
   --text-color: #333;
-
   --header-height: 100px;
   --header-scroll-height: 70px;
 }
@@ -12,7 +13,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+a {
+  text-decoration: none;
+  color: #000;
+}
 html {
   font-family: "Roboto", sans-serif;
 }
@@ -39,17 +43,69 @@ html {
 .logo-img {
   width: 100%;
 }
+.languages{
+  
+}
+.languages_img{
+  height: 40px;
+}
 
 .navbar__list {
   display: flex;
   margin: 15px 54px;
   list-style: none;
+  margin-bottom: 20px;
 }
 
 .navbar__item {
   color: var(--text-color);
   font-size: 16px;
-
   padding: 15px 15px;
   cursor: pointer;
+  
+}
+.navbar__link{
+  line-height: 70px;
+}
+.header__login{
+  display: flex;
+  padding: 15px 20px;
+  margin: 15px 15px;
+  margin-top: 20px;
+}
+/* Button */
+.btn {
+  height: 40px;
+  font-size: 14px;
+  line-height: 20px;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.btn-primary{
+  border-radius: 3px;
+}
+.btn-primary:hover{
+  background-color: var(--second-color);
+}
+.btn-secondary{
+  border-radius: 3px;
+  background-color: red;
+}
+.btn-secondary:hover{
+  background-color: var(--second-color);
+}
+
+.separate {
+  
+  display: block;
+  height: 2px;
+  width: 0%;
+  text-align: center;
+  background-color: var(--primary-color);
+}
+.navbar__item:hover .separate {
+  width: 100%;
+  transition: width 0.005s ease-in-out;
 }
